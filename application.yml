@@ -1,7 +1,6 @@
 token:
   expiration_time: 864000000
-  secret: 한글로열여섯글자를채워보았습니다
+  secret: 한글로열여섯글자를채워보았습니다_1
 
 gateway:
   ip: 125.133.229.39
-  
