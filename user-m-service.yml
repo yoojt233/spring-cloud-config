@@ -3,3 +3,7 @@ spring:
     url: jdbc:h2:mem:testdb
     driver-class-name: org.h2.Driver
     username: '{cipher}AYCkOVmvJWrwsMnx8AOkc+y6SQx/PEAVFO3ysNPouQBChAruBt1IYpS7zX421XiMXbFdjR9RT08wc0FvELPkXvvlCOsgPlc5kMFAA6U+IMw/+Ac3h/4Qt+mfhAoKyhnicPoDltFvPeQNe2RDQhbOYKqR+A6V7MUQXX/ZCcaI+wHt3Ei3UM9TML3dpChrda9LSVQnoXnf3bEnmo0NuTsgTmv61sVG+NsAxpkaCQL0nnH1I0F7y3xUhjsTDaTe6141I7rPgHDXnMubFgWXUeQl3duoxsvhHM/M+HRzemWd0pIRVklcCD7nozIqki859lZ26ntGquoyfwQnDNzXRyBsRrHiLaRgADpndmw4fm+06whpOAl9nSqDGz/tUZc0kmQAVolgOXIEWS68WasymstXzmoDBiJjgXQRuegdBs7LPsCVNn6+ie0Mah3So/GQWgIimRqtHvV8Zj21341iuM0yWhjIXTqeifvGQK19UA5q0tsROB/Myy86UCmqFaTTQ7K2R8TbpM0RnEX3uLngWi0biaBlbytVshLEhWoyjnRvdqpk2Q=='
+
+order_service:
+  url: http://127.0.0.1:8000/order-m-service/%s/orders
+  
