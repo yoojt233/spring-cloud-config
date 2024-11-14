@@ -6,4 +6,5 @@ spring:
 
 order_service:
   url: http://ORDER-M-SERVICE/order-m-service/%s/orders
-  
+  exception:
+    order_empty: There is no item.
