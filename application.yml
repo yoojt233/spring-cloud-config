@@ -1,6 +1,54 @@
+server:
+  port: 0
+
+spring:
+  rabbitmq:
+    host: rbmq
+    port: 5672
+    username: guest
+    password: guest
+  jpa:
+    hibernate:
+      ddl-auto: update
+    databse: postgresql
+  zipkin:
+    base-url: http://zpkn:9411
+    enabled: true
+  cloud:
+    openfeign:
+      micrometer:
+        enabled: true
+
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://discovery-m-service:8761/eureka
+      
+logging:
+  pattern:
+    level: '%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]'
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh, health, beans, httptrace, busrefresh, prometheus, metrics
+  tracing:
+    sampling:
+      probability: 1.0
+    propagation:
+      type: b3
+  zipkin:
+    tracing:
+      endpoint: http://zpkn:9411/api/v2/spans
+
 token:
   secret: '{cipher}AYBy1WybH76OlQNvu2n2dtpbPEjuH0LCdwLHeTodGb9f+i31GP+x37fNx0vXkgceVFA0abkCVq5oYa7TTrEcmykUSUihYlZWKVCD2EXBDRXApSKD0W4to84Jss42IaWtq5sd+uuESA2Tg32thr9eb1vfELekZ0RrkbDE6sTp8SrZN1h2NvpsqYUXOgO7WYgTsm49/BJ1aTCKSKRbwT1NpwGKo6s2q9XL9oaYghloBPTnS+TVDszVIPHLELypupcDFIxz3jmQQLN0rI0SCujw1G63ZPkubk8PTI1ZbB9j7n57U/MQ22w5P+bUbLWXznV/pmWXCCfrR3eV01Zyl5f2i0HukRhymSz8fcj6wBX7C1Cj+lrkjUP6BiGW7KLBG2npwRbuymMcUYmRJss9xjLbxk2I60Uyx05o751nJewtlPrFGIP2YjEhVwwLMSVovm6J/sTVtywQaKWopcnPjPOEoZiI2J9AhclE8+pGX9+nVWP4ENRgaYmwApFmsmGtePnE2SogAlTe8fHXoozPdztpcvVHywJMh9DmcY8klSI0m5hVKg2Fx2TAbx3p1dHCqL0XxuVc/twNHUvNAQ4MgnKQgQC/2IVE8na693+9IeHBYE6AVA=='
   expiration_time: 86500000
 
 gateway:
-  ip: 125.133.229.39
+  ip: gateway-m-service

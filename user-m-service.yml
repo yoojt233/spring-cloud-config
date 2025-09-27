@@ -1,8 +1,15 @@
 spring:
+  application:
+    name: user-m-service
   datasource:
-    url: jdbc:h2:mem:testdb
-    driver-class-name: org.h2.Driver
-    username: '{cipher}AYCkOVmvJWrwsMnx8AOkc+y6SQx/PEAVFO3ysNPouQBChAruBt1IYpS7zX421XiMXbFdjR9RT08wc0FvELPkXvvlCOsgPlc5kMFAA6U+IMw/+Ac3h/4Qt+mfhAoKyhnicPoDltFvPeQNe2RDQhbOYKqR+A6V7MUQXX/ZCcaI+wHt3Ei3UM9TML3dpChrda9LSVQnoXnf3bEnmo0NuTsgTmv61sVG+NsAxpkaCQL0nnH1I0F7y3xUhjsTDaTe6141I7rPgHDXnMubFgWXUeQl3duoxsvhHM/M+HRzemWd0pIRVklcCD7nozIqki859lZ26ntGquoyfwQnDNzXRyBsRrHiLaRgADpndmw4fm+06whpOAl9nSqDGz/tUZc0kmQAVolgOXIEWS68WasymstXzmoDBiJjgXQRuegdBs7LPsCVNn6+ie0Mah3So/GQWgIimRqtHvV8Zj21341iuM0yWhjIXTqeifvGQK19UA5q0tsROB/Myy86UCmqFaTTQ7K2R8TbpM0RnEX3uLngWi0biaBlbytVshLEhWoyjnRvdqpk2Q=='
+    url: jdbc:postgresql://psql:5432/users
+    driver-class-name: org.postgresql.Driver
+    username: '{cipher}AYB+TphtPv1h3tftXw8kF9XI+7HtAcp3bq2ScB4QLquc6CWKblt4Hh6hA36Prupn06m7D3lsklVMopqrEnJHc5XTi7tvQQpjPTbCjPqRa7veo++TvkpYPvfNd2GLtNB3lcTw3Truk6zPE+bpcFtQrW/2v0UnOiwQBotUDIyFBB9rgA8mEOcYI+bhfegaW0TFPcMIytu4qOB89SWj9J6weiLhoslDjp51ntTO1iZ6biQI5ri/C8jYiCpPz19ufDzBnFU7knl5qADgkWyCS94VkiXNxLHIII79nJgj3i4idN7R6wKD9iWNR0JgJNkM2vfGR8M8m0wGroSRgx0TPht5YTapjOjO4kIeUQuPD1WH2uP7YkuQdyGzxK2H1qqYuiMAejPROgnTbcjD+MCkH4YCgo5/dj1kis426Zk5X4GZ//ubzcki1l+jzPQ6b+dkwBRJPqbRDDuBQ138U2yiYVV9+n86R0oBDLd3CGt0JDWa6AN3htBIB04kdHF0V15I4cpH2AKiyi2jhUGoST+0oV1pSygdSht8tIK7Ycmr4vO4dlNKfQ=='
+    password: '{cipher}AYB+TphtPv1h3tftXw8kF9XI+7HtAcp3bq2ScB4QLquc6CWKblt4Hh6hA36Prupn06m7D3lsklVMopqrEnJHc5XTi7tvQQpjPTbCjPqRa7veo++TvkpYPvfNd2GLtNB3lcTw3Truk6zPE+bpcFtQrW/2v0UnOiwQBotUDIyFBB9rgA8mEOcYI+bhfegaW0TFPcMIytu4qOB89SWj9J6weiLhoslDjp51ntTO1iZ6biQI5ri/C8jYiCpPz19ufDzBnFU7knl5qADgkWyCS94VkiXNxLHIII79nJgj3i4idN7R6wKD9iWNR0JgJNkM2vfGR8M8m0wGroSRgx0TPht5YTapjOjO4kIeUQuPD1WH2uP7YkuQdyGzxK2H1qqYuiMAejPROgnTbcjD+MCkH4YCgo5/dj1kis426Zk5X4GZ//ubzcki1l+jzPQ6b+dkwBRJPqbRDDuBQ138U2yiYVV9+n86R0oBDLd3CGt0JDWa6AN3htBIB04kdHF0V15I4cpH2AKiyi2jhUGoST+0oV1pSygdSht8tIK7Ycmr4vO4dlNKfQ=='
+
+logging:
+  level:
+    service.usermservice.client: DEBUG
 
 order_service:
   url: http://ORDER-M-SERVICE/order-m-service/%s/orders
