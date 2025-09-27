@@ -5,8 +5,8 @@ spring:
   rabbitmq:
     host: rbmq
     port: 5672
-    username: admin
-    password: admin
+    username: guest
+    password: guest
   jpa:
     hibernate:
       ddl-auto: update
