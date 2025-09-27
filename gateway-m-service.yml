@@ -5,7 +5,7 @@ server:
 #spring
 spring:
   application:
-    name: apigw-service
+    name: gateway-m-service
   cloud:
     gateway:
       routes:
