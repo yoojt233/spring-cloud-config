@@ -56,4 +56,4 @@ token:
   expiration_time: 86500000
 
 gateway:
-  ip: gateway-m-service
+  ip: 172.18.0.9
