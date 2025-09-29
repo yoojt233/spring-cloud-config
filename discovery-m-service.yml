@@ -1,6 +1,10 @@
 server:
   port: 8761
 
+spring:
+  application:
+    name: discovery-m-service  
+
 token:
   secret: 한글로열여섯글자를채워보겠습니다
   expiration_time: 86500000
