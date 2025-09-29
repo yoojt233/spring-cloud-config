@@ -2,7 +2,7 @@ spring:
   application:
     name: catalog-m-service
   datasource:
-    url: jdbc:postgresql://psql:5432/ecommerce
+    url: jdbc:postgresql://localhost:5432/ecommerce
     driver-class-name: org.postgresql.Driver
     username: ecom
     password: '{cipher}AYClETVsUybafweLRqO0muBz6b4sWztc4iasuS/AHIIY0u9pvvYPnr+PDRP/RJtlW7DUBtdH9HCmHMQwiq15YHrenxB5NSpEO+d2zgVoEezjHMvuRVbS799ir1Xsu36KStcGvQr6X80Lb1ObHtuYdmPeAHJ/WcCWoqw0+Fiw+t4dNzYi21uV6SEipRsWrR79wTSXYfdxAmc3fWcwdz/cR/pwjhhRXpiIBlv8/QRU0+5ep6ao2gJWFpw6aRPgOCYFn2sM84Wh7R4lqdAFl65zQJi9SmP1qaOQinViILuoPtc3uzQ4kKvqoIlxV4f0nxlVCnkK9TqcFEq/xD+4kDUcFcoEkOTcGZpFpECr/mPfq22d9MMXYu6823WiP1UoRmhcgPWEurACokkasyyowQhcYIRtcrWjctRb9Unz/s9iaTFgKIOFf/5m2DKOHCEzKEhVFC1THRT3tXJu8g29BKfPQ6efITF25m3zJfT26LXF3ab3a/S0GGKhMuyUqJaMXdoHw04HmwIbpIKMG3brjKfe8wNmKtc62xxKtie3IQqcWhxM0A=='
@@ -10,4 +10,3 @@ spring:
 logging:
   level:
     service.catalogmservice: DEBUG
-    
