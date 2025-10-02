@@ -12,11 +12,11 @@ spring:
         bindings:
           rollbackConsumer-in-0:
             consumer:
-              strea,: true
+              stream: true
       bindings:
         rollbackConsumer-in-0:
           destination: rollback
-          group: catalog-m-service
+          group: catalog-m-service-group
           content-type: application/json
 
 logging:
