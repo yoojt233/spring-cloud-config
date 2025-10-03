@@ -23,6 +23,15 @@ spring:
     openfeign:
       micrometer:
         enabled: true
+  data:
+    mongodb:
+      host: mng
+      port: 27017
+      authentication-database: admin
+      database: ecom
+      username: esta
+      password: '{cipher}AYCVoyHJ6INEzT4Hy+hVA09e00IqcZKJJXAfGqYmETrGh+aPn3kuQChhHfqUbYg2pzce3ASiYnCgfxqHOSU4Y2IqQIlDCAF2DCvE243aPPr+6rfITW5nAE9ETfqKCM/SSG1iWe4E6b+YfHfd8HSdGvsxPzPiPXid22fx8/t0yL5kXOepqstjxx4yf3Q3Mt2Ljxx0LYzNgV7O8Ioe6kKPkB0D26YZSV7Z1R5erbLF6G+JGVbxMgOayrQ9+GdxaFl2LvaYqzZmqur3p0mlXOP2/GKLXrrparceKHWgHT1AqBzZlemyRYHT18N8/CVYOhyD/ADbKwQek1UQs4e2VxKwPxrwbhV+YIsB5cx/XfBia6NJdzhu7cNoC/wgkYfP5uFPDOcalfCzJGe+1SvJGC4xcwwAaS1qBJFEXWER4VwSsY7ns9Hr5iFeb7JvmVJv89+SDwDpWwmk1XNCiVd+KxruBDySiDqgaF04PUurrKMpiPQlyPI8YMnj32ORIf4qOWwfNdmRd3A1dS4bNFHLwynGWyJMpIRA/nkL9srivtthy2mL5A=='
+
 
 eureka:
   instance:
